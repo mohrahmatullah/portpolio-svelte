@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohmatuloh — Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Rohmatuloh, a Tangerang-based Web Developer with 8+ years of experience in Java Spring Boot, Odoo, Laravel, Node.js, React and Vue."
+    />
+    <meta name="author" content="Rohmatuloh" />
+    <meta name="keywords" content="Rohmatuloh, Web Developer, Odoo Developer, Spring Boot, Laravel, Node.js, React, Vue, Portfolio, Tangerang, Indonesia" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Rohmatuloh — Web Developer" />
+    <meta property="og:description" content="Web Developer · Odoo · Spring Boot · Node.js · React · Vue · PHP — 8+ years building enterprise, ERP, HR and e-commerce systems." />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Apply saved theme & language before first paint to avoid a flash of the wrong theme.
+      (function () {
+        var root = document.documentElement;
+        var theme = null;
+        var lang = null;
+        try {
+          theme = localStorage.getItem('theme');
+          lang = localStorage.getItem('lang');
+        } catch (e) {}
+        if (theme !== 'light' && theme !== 'dark') {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        if (lang !== 'en' && lang !== 'id') {
+          lang = (navigator.language || '').toLowerCase().indexOf('id') === 0 ? 'id' : 'en';
+        }
+        root.classList.toggle('dark', theme === 'dark');
+        root.lang = lang;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
